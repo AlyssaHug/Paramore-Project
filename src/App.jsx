@@ -1,35 +1,37 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+    const [count, setCount] = useState(0);
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    return (
+        <>
+            <div className='header'>
+                <h1>Meet The Band</h1>
+                <p>The faces behind the music</p>
+            </div>
+            <div className='band'>
+                <img
+                    className='band-taylor'
+                    src='/Band/Home/Taylor.png'
+                    alt='Taylor York'
+                />
+                <img
+                    className='band-hayley'
+                    src='/Band/Home/Hayley.png'
+                    alt='Hayley Williams'
+                />
+                <img
+                    className='band-zac'
+                    src='/Band/Home/Zac.png'
+                    alt='Zac Farro'
+                />
+                <p className='spacer'>Paramore</p>
+            </div>
+        </>
+    );
 }
 
-export default App
+export default App;
